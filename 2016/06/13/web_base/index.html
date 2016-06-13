@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sam Naive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="http://tva3.sinaimg.cn/crop.0.14.751.751.180/7eb8bbcajw8f4e01yjbypj20kv0lowfm.jpg">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+      
+        <a class="active" href="/.">主页</a>
+        
+
+      
+  
+      
+        <a href="/archives">文章</a>
+      
+  
+      
+        <a href="/about">关于</a>
+      
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2016/06/13/web_base/"></a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">June 13 2016</p>
+  </section>
+
+  <section class="article-entry">
+    <p>#Web后端开发</p>
+<h2 id="开发Web后台需要的基本功以及共通的业务点"><a href="#开发Web后台需要的基本功以及共通的业务点" class="headerlink" title="开发Web后台需要的基本功以及共通的业务点"></a>开发Web后台需要的基本功以及共通的业务点</h2><p>##0.基本功</p>
+<ul>
+<li>HTTP基本概念</li>
+<li>SQL数据库的基本操作</li>
+<li>正则表达式</li>
+<li>Linux/Unix系统的基本操作</li>
+<li>大型框架选择<ul>
+<li>Python:<code>Django</code></li>
+<li>Ruby:<code>Ruby on Rails</code></li>
+<li>PHP: <code>Laravel</code></li>
+<li>Node.js: <code>Express/Sails</code></li>
+<li>Java: ‘SpringMVC’</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>下面是个人总结，有主观因素，内容会一步步添加上去，这个是简单汇总</p>
+</blockquote>
+<p>##1.定义URL路由(<code>Route</code>)</p>
+<ul>
+<li>路由表/路由项</li>
+<li>路由过滤器</li>
+</ul>
+<p>##2.编写/组织请求函数(<code>Views</code>)</p>
+<ul>
+<li>Request Handle函数</li>
+<li>修改/输出 Response Header/Content</li>
+<li>实现GET/POST/PUT方法</li>
+<li>如何获取/修改/存储 cookie/session</li>
+<li>中间件概念:定义全局拦截函数</li>
+<li>JSON/XML Parse/文件上传</li>
+</ul>
+<p>##3.数据库(<code>Models</code>)</p>
+<ul>
+<li>ORM</li>
+<li>Sqlite3/MySQL/NoSQL/PostgreSQL/Oracle</li>
+<li>定义/组织/初始化/修改 数据表 (Django 每个数据模型层的变更都需要makemigrations/migrate)</li>
+<li>增删改查，直接SQL语句访问</li>
+<li>ORM中的hasone,manytomany,onetomany关系</li>
+</ul>
+<p>##4.模板系统(<code>Templates</code>)</p>
+<ul>
+<li>组织/访问模板文件的目录 /app/templates/…</li>
+<li>模板语法/继承</li>
+<li>自定义模板函数</li>
+<li>include其他模板</li>
+<li>for/if/else/HTTP操作  </li>
+</ul>
+<p>##5.表单(<code>Form</code>)</p>
+<ul>
+<li>表单验证辅助函数</li>
+<li>安全问题:Auth等</li>
+</ul>
+<p>##6.部署/架构(<code>Deploy</code>)</p>
+<ul>
+<li>云服务器</li>
+<li>域名备案绑定</li>
+<li>配置开发/生产环境</li>
+<li>自动化运维</li>
+<li>如何访问数据库</li>
+<li>文件架构: 静态文件访问等问题</li>
+</ul>
+<p>##7.CMS(<code>Admin</code>)</p>
+<ul>
+<li>Admin 后台管理</li>
+</ul>
+<p>##8.其他</p>
+<ul>
+<li>异常处理,404/403/500/200/201</li>
+<li>日志系统</li>
+<li>邮件系统</li>
+</ul>
+
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://tva3.sinaimg.cn/crop.0.14.751.751.180/7eb8bbcajw8f4e01yjbypj20kv0lowfm.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> Sam Naive </p>
+      <p class="subtitle"> 不要见风就是雨，识得唔识得吖 </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+    <!-- <p> share it if you like it~ </p> -->
+    <a
+  class="twitter-share-button"
+  data-size="large"
+  data-via="DrakeLeung"
+  href="https://twitter.com/intent/tweet?text=#Web后端开发</p>
+<h2 id="
+>
+  Tweet
+</a>
+
+<script>
+  window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  js.async = true;
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+</script>
+
+  </section>
+</div>
+
+
+  
+    
+<section class="article-comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+<script>
+  var disqus_shortname = 'samnaive';
+  
+  var disqus_url = 'http://yoursite.com/2016/06/13/web_base/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  
+</main>
+
+</body>
+</html>
